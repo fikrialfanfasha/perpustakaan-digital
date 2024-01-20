@@ -10,7 +10,7 @@ class HomeController extends Controller
     {
         // dd(auth()->user()->getRoleNames());
         // if (auth()->user()->can('view_dashboard')) {
-            return view('dashboard');
+            return view('dashboard.app');
         // }
         // return abort(403);
     }
