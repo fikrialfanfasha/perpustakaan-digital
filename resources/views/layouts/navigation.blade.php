@@ -18,16 +18,12 @@
                 </div>
                 @role('admin')
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('A') }}
+                    <x-nav-link :href="route('buku')" :active="request()->routeIs('buku')">
+                        {{ __('Data Buku') }}
                     </x-nav-link>
                 </div>
                 @endrole
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('B') }}
-                    </x-nav-link>
-                </div>
+                
             </div>
 
             <!-- Settings Dropdown -->

@@ -9,9 +9,6 @@ use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 class PermissionSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         $role_admin = Role::updateOrCreate(
