@@ -23,6 +23,11 @@
                     </x-nav-link>
                 </div>
                 @endrole
+                <!-- Settings Dropdown -->
+            <div class="hidden sm:flex sm:items-center sm:ms-6">
+                
+                
+            </div>
                 
             </div>
 
