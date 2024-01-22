@@ -15,19 +15,11 @@ return new class extends Migration
             //perpustakaan
             $table->increments('id_buku');
             $table->string('judul_buku');
+            $table->string('pengarang');
             $table->string('penerbit');
             $table->integer('tahun_terbit');
             $table->timestamps();
-            //kasir
-            $table->increments('id_produk');
-            $table->string('nama_produk');
-            $table->integer('harga');
-            $table->integer('stok');
-            //galeri
-            $table->increments('id_album');
-            $table->string('nama_album');
-            $table->string('deskripsi');
-            $table->dropSpatialIndex('tanggal_dibuat');
+            
         });
     }
 
