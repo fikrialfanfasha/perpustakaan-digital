@@ -5,7 +5,7 @@
                 <div class="p-6 text-gray-900">
                     <div class="mb-4">
                         <a href="{{ route('buku.create') }}" class="border bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded inline-block">
-                            + Tambah Data Buku
+                            +  Tambah Data Buku
                         </a>
                     </div>
                     

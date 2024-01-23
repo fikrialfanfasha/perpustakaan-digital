@@ -18,8 +18,13 @@
                 </div>
                 @role('admin')
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('buku')" :active="request()->routeIs('buku')">
+                    <x-nav-link :href="route('buku')" :active="request()->routeIs('buku') || request()->routeIs('buku.create')">
                         {{ __('Data Buku') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('kategori')" :active="request()->routeIs('kategori') || request()->routeIs('kategori.create')">
+                        {{ __('Data Kategori') }}
                     </x-nav-link>
                 </div>
                 @endrole
