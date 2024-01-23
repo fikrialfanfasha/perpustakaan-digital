@@ -27,6 +27,11 @@
                         {{ __('Data Kategori') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('peminjaman')" :active="request()->routeIs('peminjaman')">
+                        {{ __('Data Peminjaman') }}
+                    </x-nav-link>
+                </div>
                 @endrole
                 <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
