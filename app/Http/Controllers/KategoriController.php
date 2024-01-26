@@ -21,6 +21,6 @@ class KategoriController extends Controller
         Kategori::create([
             'nama_kategori'=>$request->nama_kategori
         ]);
-        return redirect ('/kategori');
+        return redirect ('/kategori')->with('success', 'Kategori berhasil ditambahkan!');
     }
 }

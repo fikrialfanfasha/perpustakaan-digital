@@ -1,27 +1,24 @@
-<footer class="content-footer footer bg-footer-theme">
-                        <div
-                            class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                            <div class="mb-2 mb-md-0">
-                                ©
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script>
-                                , made with ❤️ by
-                                <a href="https://themeselection.com" target="_blank"
-                                    class="footer-link fw-medium">ThemeSelection</a>
-                            </div>
-                            <div class="d-none d-lg-inline-block">
-                                <a href="https://themeselection.com/license/" class="footer-link me-4"
-                                    target="_blank">License</a>
-                                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More
-                                    Themes</a>
+</div>
+<!-- End of Main Content -->
 
-                                <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/"
-                                    target="_blank" class="footer-link me-4">Documentation</a>
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2021</span>
+        </div>
+    </div>
+</footer>
 
-                                <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-                                    target="_blank" class="footer-link">Support</a>
-                            </div>
-                        </div>
-                    </footer>
-                    <!-- / Footer -->
+
+</div>
+
+
+</div>
+<script src="{{asset('dash/vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{asset('dash/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{asset('dash/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+<script src="{{asset('dash/js/sb-admin-2.min.js') }}"></script>
+<script src="{{asset('dash/vendor/chart.js/Chart.min.js') }}"></script>
+<script src="{{asset('dash/js/demo/chart-area-demo.js') }}"></script>
+<script src="{{asset('dash/js/demo/chart-pie-demo.js') }}"></script>

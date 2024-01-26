@@ -9,9 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', function(){
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'landing']);
 
 
 
@@ -27,7 +25,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/kategori/tambah', [KategoriController::class,'create'])->name('kategori.create');
     Route::post('/kategori/store', [KategoriController::class, 'store'])->name('kategori.store');
     Route::get('/peminjaman', [PeminjamanController::class, 'index'])->name('peminjaman');
-    Route::post('/selesai/{id}', [PeminjamanController::class, 'kembalikanBuku'])->name('peminjaman.kembalikan');    
+    Route::get('/peminjaman/tambah', [PeminjamanController::class, 'tambahPeminjaman'])->name('peminjaman.tambah');
+    Route::post('/peminjaman/store', [PeminjamanController::class, 'storePeminjaman'])->name('peminjaman.store');
+    Route::post('/selesai/{id}', [PeminjamanController::class, 'kembalikanBuku'])->name('peminjaman.kembalikan');   
+    Route::get('/report', [PeminjamanController::class, 'print']); 
 });
+
 
 require __DIR__.'/auth.php';

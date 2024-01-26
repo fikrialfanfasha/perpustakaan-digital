@@ -9,7 +9,6 @@ class Buku extends Model
 {
     use HasFactory;
     protected $table = 'buku';
-
     protected $fillable = [
         'judul', 
         'pengarang', 
@@ -24,8 +23,8 @@ class Buku extends Model
     {
         return $this->belongsTo(Kategori::class, 'kategori_id');
     }
-    public function peminjaman()
+    public function peminjamans()
     {
-        return $this->hasMany(Peminjaman::class);
+        return $this->hasMany(Peminjaman::class, 'user_id');
     }
 }
